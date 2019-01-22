@@ -1,92 +1,53 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Counter11 from "./Counter11.js";
-import Counter12 from "./Counter12.js";
+
+import Header from './component/MainView/Header/Header.js';
+import RightContents from './component/MainView/RightContents/RightContents.js';
+import MainView from './container/MainView.js';
+
+import MyPongdangLive from './component/MainView/RightContents/MyPongdang/Mylivetalk/MyPongdangLive.js';
+import Search from "./component/MainView/Header/SearchBar/Search.js";
+import LiveTalk from "./component/LiveTalk/LiveTalk.js";
 
 
+import {Switch, Route } from 'react-router-dom';
+
+const Main =()=>(
+    <Switch>
+      
+      <Route exact path="/" component={MainView}></Route>
+      {/*
+          "/view/:id"에 url이 이동했을때 ContentView 컴포넌트를 렌더링합니다.
+          여기에서 ":id" 이 부분은 url에 변화가 필요할때 사용하는 방식 입니다.
+          ":이름"" 이렇게 설정하면 url을 /view/123, /view/555 라고 해도 ContetnView 컴포넌트를 렌더링하게됩니다.
+      */}
+
+      <Route path="/search" component={Search}></Route>      
+        
+      
+      <Route path="/livetalk" component={LiveTalk}></Route>
+      
+
+    </Switch>
+
+)
 class App extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      number: 0,
-    };
-  }
-
-  handleIncrease2 = () => {
-    this.setState({ number: this.state.number +2 })
-  }
-
-  handleDecrease2 = () => {
-    this.setState({ number: this.state.number -2 })
-  }
-
-  handleReset2 = () => {
-    this.setState({ number: this.state.number=0 })
-  }
-
-
-  handleIncrease1 = () => {
-    this.setState({ number: this.state.number +1 })
-  }
-
-  handleDecrease1 = () => {
-    this.setState({ number: this.state.number -1 })
-  }
-
-  handleReset1 = () => {
-    this.setState({ number: this.state.number=0 })
-  }
-
-  render() {
-
+  render() { 
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1>
-            Counter2    
-          </h1>
-          <Counter11 num={"값: " +  this.state.number}
-            add={this.handleIncrease2}
-            sub={this.handleDecrease2}
-            reset={this.handleReset2} 
+      
+        <Header />
+ 
+        <RightContents />
+     
+        <MyPongdangLive />
+     
+        <MainView />
 
-            />
-        
-        
-    
-          <h1>
-            Counter1    
-          </h1>
-          <Counter12 num={"값: " + this.state.number} 
-            add={this.handleIncrease1}
-            sub={this.handleDecrease1}
-            reset={this.handleReset1}  
-            />
-        
-
-          
-          <a
-            className="App-link1"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-          <a
-            className="App-link2"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >  
-          </a>
-        </a></header>
       </div>
     );
   }
 }
 
 export default App;
-
-

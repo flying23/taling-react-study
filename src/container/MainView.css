@@ -1,0 +1,183 @@
+.container {
+    margin: 0px auto;
+    padding-top: 23px;
+    border: 1px solid #bcbcbc;
+    max-width: 1600px;
+    clear: left;
+    float: left;
+    height: 440px;
+    width: 100%
+}
+
+.headerbar {
+    padding-top: 10px;
+    float: left;
+    height: 80px;
+    width: 80%
+}
+
+
+
+.headerbar .search {
+    padding-top: 25px;
+    margin-left: 25px;
+}
+.form-search {
+    width: 500px;
+    height: 45px;
+    line-height: 45px;
+    float: left;
+    padding-left: 25px;
+}
+
+.form-input {
+    width: 470px;
+    height: 40px;
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    font-weight: 700;
+    font-size: 18px;
+    line-height:23px;
+    /*padding-top: 10px;
+    padding-bottom: 10px;*/
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+}
+.searchbar {
+    position: absolute;
+}
+.headerbtn {
+    background-color: transparent;
+    border-color: transparent;
+    position: relative;
+    bottom: 7px;
+    left: 435px;
+}
+
+.header-list {
+    padding-left: 75%;
+}
+
+.header-contents {
+    padding-top: 5px;
+    list-style: none;
+    position: relative;
+    float: left;
+}
+
+.room {
+    float: left;
+    padding-left: 0;
+    padding-top: 2px;
+    padding-bottom: 7px;
+    height: 10px;
+    line-height: 10px;
+}
+
+.logout {
+    float: left;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 14px;
+    height: 10px;
+    line-height: 10px;
+}
+
+.mypage {
+    float: left;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 14px;
+    height: 10px;
+    line-height: 10px;
+}
+
+.navbar {
+    margin-top: 4%;
+    padding-top: 10px;
+    background-color: white;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    position: relative;
+    clear: left;
+    float: left;
+    height: 440px;
+    width: 80%;
+    overflow: hidden;
+}
+
+.navbar .list {
+    padding-left: 32px;
+    position: relative;
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar .item {
+    position: relative;
+    float: left;
+    /*height: 102px;
+    line-height: 102px;
+    overflow: hidden;*/
+  }
+.navbar .item:first-child {
+    margin-left: 64px;
+    padding-left: 0;
+}
+
+.navbar a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+
+.jumbotron {
+    clear: left;
+    float: left;
+    height: 440px;
+    width: 80%
+}
+
+.fixed-top {
+    position: relative;
+}
+.headerbar-brand {
+    padding-left: 50px;
+    float: left;
+
+}
+
+.content {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #bcbcbc;
+    float: left;
+    height: 80px;
+    clear: left;
+    width: 80%
+}
+.livetalk .title {
+    margin-left: 85px;
+}
+
+.sidebar {
+    
+    padding: 10px;
+    margin-bottom: 20px;
+    float: right;
+    border: 1px solid #bcbcbc;
+    width: 20%;
+    height: 600px;
+
+}
+
+.footer {
+    clear: both;
+    padding: 10px;
+    border: 1px solid #bcbcbc;
+
+}
